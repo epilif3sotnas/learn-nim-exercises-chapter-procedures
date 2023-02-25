@@ -14,27 +14,11 @@ proc exercise_2*(numbers: var openArray[int]) =
 
     sort(numbers)
 
-    echo("Lowest number : " & $numbers[1])
-    echo("Highest number : " & $numbers[^1])
+    echo("Lowest number: " & $numbers[1])
+    echo("Highest number: " & $numbers[^1])
 
-# proc exercise_3*(rounds: int32) =
-#     if rounds <= 0:
-#         return
-
-#     for idx in countup(1, rounds):
-#         if idx mod 3 == 0 and idx mod 5 == 0:
-#             echo("fizzbuzz")
-#             continue
-
-#         if idx mod 3 == 0:
-#             echo("fizz")
-#             continue
-
-#         if idx mod 5 == 0:
-#             echo("buzz")
-#             continue
-
-#         echo(idx)
+proc exercise_3*(point_1: tuple[x, y: float], point_2: tuple[x, y: float]): tuple[x, y: float] =
+    return (point_1[0] + point_2[0], point_1[1] + point_2[1])
 
 # proc exercise_4*(values_in: openArray[float64]) =
 #     echo("in   |  cm   \n---------------")
