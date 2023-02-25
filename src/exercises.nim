@@ -13,6 +13,8 @@ proc exercise_2*(numbers: var openArray[int]) =
         return
 
     sort(numbers)
+
+    echo("Lowest number : " & $numbers[1])
     echo("Highest number : " & $numbers[^1])
 
 # proc exercise_3*(rounds: int32) =
