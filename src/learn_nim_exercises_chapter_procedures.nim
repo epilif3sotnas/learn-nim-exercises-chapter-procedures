@@ -12,8 +12,8 @@ proc main() =
   let new_point = exercise_3((1.0,2.23), (7.1,190.0))
   echo("Point: " & $new_point)
 
-  # # Exercise 4
-  # exercise_4([1.0,2.0,3.0,4.0,5.0])
+  # Exercise 4
+  exercise_4()
 
 when is_main_module:
   main()
