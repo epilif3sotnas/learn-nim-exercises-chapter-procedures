@@ -1,5 +1,6 @@
-# nim
-import std/algorithm
+# std
+import
+    std/algorithm
 
 
 proc exercise_1*(name: string) =
